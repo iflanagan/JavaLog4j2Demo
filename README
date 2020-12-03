@@ -1,0 +1,27 @@
+-Demo showing how to use rollbars log4j appender
+
+-Steps to setup
+
+-I use intellij but you can use whatever IDE you choose
+
+-clone the project repo
+
+git clone https://github.com/iflanagan/JavaLog4j2Demo.git
+
+-Open the project in IDE
+
+edit the log4j2.xml and add your rollbar token edit the helloWorldAction.java class and add your rollbar token
+
+-build project
+
+mvn clean install compile
+
+-Run web server default port is 8080
+
+mvn jetty:run
+
+-open a web browser and got to the following url
+
+http://localhost:8080/basic-struts/
+
+enter in your name let the date auto populate and then click submit.
