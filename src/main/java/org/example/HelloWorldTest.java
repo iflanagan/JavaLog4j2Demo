@@ -45,16 +45,8 @@ public class HelloWorldTest extends ActionSupport {
     
     public String execute() throws Exception {
 
-        System.out.println("Calling Execute Method() from helloworldtest class");
-
-        /*
-        Rollbar rollbar = Rollbar.init(withAccessToken("3935058d1fe44d61a4dfe82385e9e792").environment("PROD").codeVersion("1.2").handleUncaughtErrors(true).build());
-        rollbar.log("Struts Java Test Ian");
-        rollbar.close(true);
-        */
-
-
-
+        int i = 1 / 0;
+        System.out.println("Calling Execute Method() from helloworldtest class" + i);
 
         return SUCCESS;
     }

@@ -18,24 +18,10 @@
 
     <dependencies>
 
-        <!-- https://mvnrepository.com/artifact/com.rollbar/rollbar-web -->
         <dependency>
             <groupId>com.rollbar</groupId>
-            <artifactId>rollbar-web</artifactId>
-            <version>1.7.5</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.rollbar</groupId>
-            <version>[1.0,)</version>
-            <artifactId>rollbar-java</artifactId>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/com.rollbar/rollbar-log4j2 -->
-        <dependency>
-            <groupId>com.rollbar</groupId>
-            <artifactId>rollbar-log4j2</artifactId>
-            <version>1.7.5</version>
+            <artifactId>rollbar-struts2</artifactId>
+            <version>1.7.6-SNAPSHOT</version>
         </dependency>
 
         <dependency>
