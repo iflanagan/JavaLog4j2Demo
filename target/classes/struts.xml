@@ -9,6 +9,17 @@
     <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
 
     <package name="myPackage" extends="struts-default">
+        <interceptors>
+            <interceptor name="rollbarExceptionInterceptor"
+              class="com.rollbar.struts.interceptor.RollbarExceptionInterceptor" />
+
+            <interceptor-stack name="appStack">
+                <interceptor-ref name="rollbarExceptionInterceptor" />
+                <interceptor-ref name="defaultStack" />
+            </interceptor-stack>
+        </interceptors>
+
+        <default-interceptor-ref name="appStack"/>
 
         <default-action-ref name="index" />
 

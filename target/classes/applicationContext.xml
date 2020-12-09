@@ -3,6 +3,12 @@
 
 <beans>
     <!-- Example of Struts action instantiated by Spring -->
-    <bean id="helloWorldAction" class="org.example.HelloWorldTest" scope="prototype"/>
+    <bean id="helloWorldAction" class="org.example.HelloWorldTest" scope="singleton"/>
+
+    <bean id="rollbarProvider" class="com.rollbar.struts.RollbarFactory" scope="singleton" >
+        <property name="accessToken" value="3935058d1fe44d61a4dfe82385e9e792" />
+        <property name="captureIp" value="true" />
+        <property name="environment" value="production" />
+    </bean>
 </beans>
 

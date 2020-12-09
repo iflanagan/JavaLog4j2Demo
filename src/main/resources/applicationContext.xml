@@ -9,7 +9,7 @@
         <property name="accessToken" value="3935058d1fe44d61a4dfe82385e9e792" />
         <property name="captureIp" value="true" />
         <property name="environment" value="production" />
-        <property name="codeVersion" value="1.1.2" />
+        <property name="configProviderClassName" value="org.example.MyConfigProvider" />
     </bean>
 </beans>
 

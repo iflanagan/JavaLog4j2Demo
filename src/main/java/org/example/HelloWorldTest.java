@@ -45,8 +45,12 @@ public class HelloWorldTest extends ActionSupport {
     
     public String execute() throws Exception {
 
-        int i = 1 / 0;
-        System.out.println("Calling Execute Method() from helloworldtest class" + i);
+        if (name.equals("Ian")) {
+            throw new RuntimeException("Invalid Value");
+        }
+
+     //   int i = 1 / 0;
+      //  System.out.println("Calling Execute Method() from helloworldtest class" + i);
 
         return SUCCESS;
     }

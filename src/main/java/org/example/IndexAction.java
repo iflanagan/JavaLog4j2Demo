@@ -30,8 +30,10 @@ public class IndexAction extends ActionSupport {
 
     public String execute() throws Exception {
 
-        int i = 1 / 0;
-        System.out.println("Calling method  execute () in IndexAction class" + i);
+      //  int i = 1 / 0;
+
+
+     //   System.out.println("Calling method  execute () in IndexAction class" + i);
         now = new Date(System.currentTimeMillis());
         return SUCCESS;
     }
