@@ -18,24 +18,10 @@
 
     <dependencies>
 
-        <!-- https://mvnrepository.com/artifact/com.rollbar/rollbar-web -->
         <dependency>
             <groupId>com.rollbar</groupId>
-            <artifactId>rollbar-web</artifactId>
-            <version>1.7.5</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.rollbar</groupId>
-            <version>[1.0,)</version>
-            <artifactId>rollbar-java</artifactId>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/com.rollbar/rollbar-log4j2 -->
-        <dependency>
-            <groupId>com.rollbar</groupId>
-            <artifactId>rollbar-log4j2</artifactId>
-            <version>1.7.5</version>
+            <artifactId>rollbar-struts2</artifactId>
+            <version>1.7.6-SNAPSHOT</version>
         </dependency>
 
         <dependency>
@@ -140,4 +126,29 @@
             </plugin>
         </plugins>
     </build>
+
+    <repositories>
+        <repository>
+            <id>maven-releases</id>
+            <url>http://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>maven-snapshots</id>
+            <url>http://oss.sonatype.org/content/repositories/snapshots</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 </project>
